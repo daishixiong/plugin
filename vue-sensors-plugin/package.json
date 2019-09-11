@@ -1,6 +1,6 @@
 {
-  "name": "sensors",
-  "version": "1.0.0",
+  "name": "vue-sensors-plugin",
+  "version": "1.1.1",
   "description": "vue项目 神策统计 配置插件",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "author": "DaiSX",
   "license": "ISC",
   "devDependencies": {
+    "sa-sdk-javascript": "^1.14.8"
+  },
+  "dependencies": {
     "sa-sdk-javascript": "^1.14.8"
   }
 }
