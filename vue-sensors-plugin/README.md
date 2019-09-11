@@ -13,8 +13,8 @@
 ```
 ### 全埋点开启
 ```javascript main.js
-    import SensorsSdk from '../src/assets/js/sensors/index.js';
-    Vue.use(SensorsSdk, {
+    import SensorsPlugin from 'vue-sensors-plugin';
+    Vue.use(SensorsPlugin, {
       name: 'sensors',
       heatmap: {
         clickmap: 'default',       // $webClick    sensors.quick('autoTrack')
@@ -30,10 +30,9 @@
     });
 ```
 ### 基础用法
- -  添加依赖 npm install sa-sdk-javascript  
  -  引入 main.js, 通过 根目录的config/index.js中区分环境， 配置字段 sensors
-    -  import SensorsSdk from '../xxx/xxx/xx/sensors/index.js';
-    - Vue.use(SensorsSdk, { name: 'sensors' // default  })  第二个参数可选, 此配置优先级高于 根目录的config/index.js 中的 sensors字段
+    -  import SensorsPlugin from 'vue-sensors-plugin';
+    - Vue.use(SensorsPlugin, { name: 'sensors' // default  })  第二个参数可选, 此配置优先级高于 根目录的config/index.js 中的 sensors字段
 ```html
     
  - 调用 
