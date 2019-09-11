@@ -29,6 +29,29 @@
       });
     });
 ```
+### 配置项
+ -  config/index.js中区分环境， 配置字段 sensors
+```javascript config/index.js
+  module.exports = {
+      dev: {
+	....
+        sensors: {
+          server_url: 'xxxxx',
+          name: 'xxx',
+          heatmap: { .... }
+        }
+      },
+      build: {
+	....
+        sensors: {
+          server_url: 'xxxxx',
+          name: 'xxx',
+          heatmap: { .... }
+        }
+      }
+  }
+```
+### 配置项
 ### 基础用法
  -  引入 main.js, 通过 根目录的config/index.js中区分环境， 配置字段 sensors
     -  import SensorsPlugin from 'vue-sensors-plugin';
