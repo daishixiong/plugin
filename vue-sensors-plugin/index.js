@@ -12,7 +12,7 @@ const ENV_CONFIG = {
 const config = ENV_CONFIG[process.env.NODE_ENV]
 
 const S = {
-    create (config) {
+    create: function (config) {
         window[config.name || 'sensors'] = sensors
         sensors.init(config)
     }
